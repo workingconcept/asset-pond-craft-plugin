@@ -1,8 +1,8 @@
 <h1 align="center">AssetPond Craft CMS 3 Plugin</h1>
 
-<h4 align="center">[FilePond](https://pqina.nl/filepond/) server for Craft Assets, based on [pqina/filepond-server-php](https://github.com/pqina/filepond-server-php).</h4>
+<h4 align="center"><a href="https://pqina.nl/filepond/">FilePond</a> server for Craft Assets, based on <a href="https://github.com/pqina/filepond-server-php">pqina/filepond-server-php</a>.</h4>
 
-<p align="center"><a href="https://scrutinizer-ci.com/g/workingconcept/assetpond-craft-plugin/"><img src="https://scrutinizer-ci.com/g/workingconcept/assetpond-craft-plugin/badges/quality-score.png?b=master" alt="Scrutinizer status"></a></p>
+<p align="center"><a href="https://scrutinizer-ci.com/g/workingconcept/asset-pond-craft-plugin/"><img src="https://scrutinizer-ci.com/g/workingconcept/asset-pond-craft-plugin/badges/quality-score.png?b=master" alt="Scrutinizer status"></a></p>
 
 **This project is in early development. Use at your own risk!**
 
