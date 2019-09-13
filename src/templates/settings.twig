@@ -1,0 +1,42 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * AssetPond plugin for Craft CMS 3.x
+ *
+ * @author    Working Concept
+ * @copyright Copyright (c) 2019 Working Concept
+ * @link      https://workingconcept.com
+ * @package   AssetPond
+ * @since     1.0.0
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+{% set options = [] %}
+{% set volumes = craft.app.getVolumes().getAllVolumes() %}
+
+{% for volume in volumes %}
+    {% set options = options | merge([{
+        label: volume.name,
+        value: volume.id
+    }]) %}
+{% endfor %}
+
+{{ forms.selectField({
+    label: 'Default Folder',
+    instructions: 'Fallback destination Volume.',
+    id: 'defaultVolumeId',
+    name: 'defaultVolumeId',
+    options: options,
+    value: settings['defaultVolumeId']})
+}}
+
+{{ forms.textField({
+    label: 'Form Upload Field',
+    instructions: 'POST field to check for base64-encoded FilePond files. (See [File Encode](https://pqina.nl/filepond/docs/patterns/plugins/file-encode/).)',
+    id: 'formUploadField',
+    name: 'formUploadField',
+    options: options,
+    value: settings['formUploadField']})
+}}

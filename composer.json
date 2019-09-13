@@ -1,0 +1,46 @@
+{
+    "name": "workingconcept/asset-pond",
+    "description": "Instant FilePond server that works with Craft Assets.",
+    "type": "craft-plugin",
+    "version": "0.0.1",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "assets",
+        "uploads",
+        "filepond"
+    ],
+    "support": {
+        "docs": "https://github.com/workingconcept/asset-pond-craft-plugin/blob/master/readme.md",
+        "issues": "https://github.com/workingconcept/asset-pond-craft-plugin/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Working Concept",
+            "homepage": "https://workingconcept.com"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "craftcms/cms": "^3.2"
+    },
+    "autoload": {
+        "psr-4": {
+          "workingconcept\\assetpond\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "AssetPond",
+        "handle": "asset-pond",
+        "hasCpSettings": true,
+        "hasCpSection": false,
+        "changelogUrl": "https://raw.githubusercontent.com/workingconcept/asset-pond-craft-plugin/master/changelog.md",
+        "components": {
+            "server": "workingconcept\\assetpond\\services\\Server"
+        },
+        "class": "workingconcept\\assetpond\\AssetPond"
+    }
+}
